@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseDefinition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+	</definition>
+	
+	<definition name="formula" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/formula.jsp" />
+	</definition>
+	
+	<definition name="productlist" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/productList.jsp" />
+	</definition>
+	
+	<definition name="adminproductlist" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/adminProductList.jsp" />
+	</definition>
+	
+	<definition name="addproduct" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/addproduct.jsp" />
+	</definition>
+	
+	<definition name="editformula" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/editFormula.jsp" />
+	</definition>
+	
+	<definition name="productdetail" extends="baseDefinition" >
+		<put-attribute name="body" value="/WEB-INF/jsp/productDetails.jsp" />
+	</definition>
+</tiles-definitions>
